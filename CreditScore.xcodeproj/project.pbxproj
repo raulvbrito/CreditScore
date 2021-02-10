@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4148CA4725D40D3600573454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CA4625D40D3600573454 /* AppDelegate.swift */; };
+		4148CA4B25D40D3600573454 /* CreditReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CA4A25D40D3600573454 /* CreditReportViewController.swift */; };
+		4148CA5025D40D3A00573454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4148CA4F25D40D3A00573454 /* Assets.xcassets */; };
+		4148CA5325D40D3A00573454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4148CA5125D40D3A00573454 /* LaunchScreen.storyboard */; };
+		4148CA5E25D40D3A00573454 /* CreditReportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CA5D25D40D3A00573454 /* CreditReportServiceTests.swift */; };
+		4148CA6925D40D3A00573454 /* CreditScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CA6825D40D3A00573454 /* CreditScoreUITests.swift */; };
+		4148CAA425D411C900573454 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAA325D411C900573454 /* Coordinator.swift */; };
+		4148CAAC25D4125600573454 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAAB25D4125600573454 /* MainCoordinator.swift */; };
+		4148CABE25D4162D00573454 /* CreditReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CABD25D4162D00573454 /* CreditReportViewModel.swift */; };
+		4148CACE25D4328A00573454 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CACD25D4328A00573454 /* Report.swift */; };
+		4148CAD325D4331900573454 /* CreditReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAD225D4331900573454 /* CreditReportService.swift */; };
+		4148CAD825D433D900573454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAD725D433D900573454 /* Constants.swift */; };
+		4148CAE125D43BE800573454 /* CreditScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAE025D43BE800573454 /* CreditScoreView.swift */; };
+		4148CAE625D443B800573454 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4148CAE525D443B800573454 /* Colors.xcassets */; };
+		4148CAEF25D4447800573454 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAEE25D4447800573454 /* UIColor.swift */; };
+		4148CB0025D4483600573454 /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CAFF25D4483600573454 /* UINavigationController+StatusBar.swift */; };
+		4148CB1225D456B900573454 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CB1125D456B900573454 /* NetworkManager.swift */; };
+		4148CB2625D45A1F00573454 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CB2525D45A1F00573454 /* Stubs.swift */; };
+		4148CB2B25D45B8800573454 /* CreditReportViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148CB2A25D45B8800573454 /* CreditReportViewModelTests.swift */; };
+		4CCED6B91F29E1936E32C0AD /* Pods_CreditScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7158B05D935999447241CC7C /* Pods_CreditScoreTests.framework */; };
+		4F6CB1C1129EBD1C561827FF /* Pods_CreditScore_CreditScoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F2457BC9329FEFE380AF8C /* Pods_CreditScore_CreditScoreUITests.framework */; };
+		9C3F9F7DC416FEDE1690422A /* Pods_CreditScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F3443C3E3535942FE21CA4 /* Pods_CreditScore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4148CA5A25D40D3A00573454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4148CA3B25D40D3600573454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4148CA4225D40D3600573454;
+			remoteInfo = CreditScore;
+		};
+		4148CA6525D40D3A00573454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4148CA3B25D40D3600573454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4148CA4225D40D3600573454;
+			remoteInfo = CreditScore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00679C954F3FF90027AF2395 /* Pods-CreditScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScoreTests.release.xcconfig"; path = "Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		19F3443C3E3535942FE21CA4 /* Pods_CreditScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F2457BC9329FEFE380AF8C /* Pods_CreditScore_CreditScoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditScore_CreditScoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4148CA4325D40D3600573454 /* CreditScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4148CA4625D40D3600573454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4148CA4A25D40D3600573454 /* CreditReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportViewController.swift; sourceTree = "<group>"; };
+		4148CA4F25D40D3A00573454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4148CA5225D40D3A00573454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4148CA5425D40D3A00573454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4148CA5925D40D3A00573454 /* CreditScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4148CA5D25D40D3A00573454 /* CreditReportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportServiceTests.swift; sourceTree = "<group>"; };
+		4148CA5F25D40D3A00573454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4148CA6425D40D3A00573454 /* CreditScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4148CA6825D40D3A00573454 /* CreditScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUITests.swift; sourceTree = "<group>"; };
+		4148CA6A25D40D3A00573454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4148CAA325D411C900573454 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4148CAAB25D4125600573454 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		4148CABD25D4162D00573454 /* CreditReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportViewModel.swift; sourceTree = "<group>"; };
+		4148CACD25D4328A00573454 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		4148CAD225D4331900573454 /* CreditReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportService.swift; sourceTree = "<group>"; };
+		4148CAD725D433D900573454 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4148CAE025D43BE800573454 /* CreditScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreView.swift; sourceTree = "<group>"; };
+		4148CAE525D443B800573454 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4148CAEE25D4447800573454 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4148CAFF25D4483600573454 /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
+		4148CB1125D456B900573454 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4148CB2525D45A1F00573454 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		4148CB2A25D45B8800573454 /* CreditReportViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportViewModelTests.swift; sourceTree = "<group>"; };
+		4910520F52583018400850AC /* Pods-CreditScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScore.release.xcconfig"; path = "Target Support Files/Pods-CreditScore/Pods-CreditScore.release.xcconfig"; sourceTree = "<group>"; };
+		671BE4140EE2FA6C1E6DFC98 /* Pods-CreditScore-CreditScoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScore-CreditScoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-CreditScore-CreditScoreUITests/Pods-CreditScore-CreditScoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7158B05D935999447241CC7C /* Pods_CreditScoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditScoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E359824AC748EC4264B6B83 /* Pods-CreditScore-CreditScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScore-CreditScoreUITests.release.xcconfig"; path = "Target Support Files/Pods-CreditScore-CreditScoreUITests/Pods-CreditScore-CreditScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C75436F8D19FE3B8E83F0DE5 /* Pods-CreditScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScore.debug.xcconfig"; path = "Target Support Files/Pods-CreditScore/Pods-CreditScore.debug.xcconfig"; sourceTree = "<group>"; };
+		CF2DA509A454BA4EBDE53469 /* Pods-CreditScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditScoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CreditScoreTests/Pods-CreditScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4148CA4025D40D3600573454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3F9F7DC416FEDE1690422A /* Pods_CreditScore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148CA5625D40D3A00573454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCED6B91F29E1936E32C0AD /* Pods_CreditScoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148CA6125D40D3A00573454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F6CB1C1129EBD1C561827FF /* Pods_CreditScore_CreditScoreUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4148CA3A25D40D3600573454 = {
+			isa = PBXGroup;
+			children = (
+				4148CA4525D40D3600573454 /* CreditScore */,
+				4148CA5C25D40D3A00573454 /* CreditScoreTests */,
+				4148CA6725D40D3A00573454 /* CreditScoreUITests */,
+				4148CA4425D40D3600573454 /* Products */,
+				D40DF630E0B230005440ACD3 /* Pods */,
+				FD6B850E9D8A7313A431390C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4148CA4425D40D3600573454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA4325D40D3600573454 /* CreditScore.app */,
+				4148CA5925D40D3A00573454 /* CreditScoreTests.xctest */,
+				4148CA6425D40D3A00573454 /* CreditScoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4148CA4525D40D3600573454 /* CreditScore */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA4F25D40D3A00573454 /* Assets.xcassets */,
+				4148CAE525D443B800573454 /* Colors.xcassets */,
+				4148CAA225D4106F00573454 /* Coordinators */,
+				4148CAED25D4446200573454 /* Extensions */,
+				4148CB0D25D456A600573454 /* Managers */,
+				4148CACC25D416F500573454 /* Models */,
+				4148CACB25D416EE00573454 /* Services */,
+				4148CA7925D40E8A00573454 /* Supporting Files */,
+				4148CABC25D4160E00573454 /* ViewModels */,
+				4148CA8025D40EAF00573454 /* Views */,
+			);
+			path = CreditScore;
+			sourceTree = "<group>";
+		};
+		4148CA5C25D40D3A00573454 /* CreditScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				4148CB1E25D458F400573454 /* Credit Report */,
+				4148CB1925D4584E00573454 /* Supporting Files */,
+			);
+			path = CreditScoreTests;
+			sourceTree = "<group>";
+		};
+		4148CA6725D40D3A00573454 /* CreditScoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA6825D40D3A00573454 /* CreditScoreUITests.swift */,
+				4148CA6A25D40D3A00573454 /* Info.plist */,
+			);
+			path = CreditScoreUITests;
+			sourceTree = "<group>";
+		};
+		4148CA7925D40E8A00573454 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA4625D40D3600573454 /* AppDelegate.swift */,
+				4148CAD725D433D900573454 /* Constants.swift */,
+				4148CA5425D40D3A00573454 /* Info.plist */,
+				4148CA5125D40D3A00573454 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4148CA8025D40EAF00573454 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4148CB1D25D458DD00573454 /* Credit Report */,
+				4148CADC25D4383B00573454 /* Custom */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4148CAA225D4106F00573454 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4148CAA325D411C900573454 /* Coordinator.swift */,
+				4148CAAB25D4125600573454 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		4148CABC25D4160E00573454 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4148CABD25D4162D00573454 /* CreditReportViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4148CACB25D416EE00573454 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4148CAD225D4331900573454 /* CreditReportService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4148CACC25D416F500573454 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4148CACD25D4328A00573454 /* Report.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4148CADC25D4383B00573454 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4148CAE025D43BE800573454 /* CreditScoreView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		4148CAED25D4446200573454 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4148CAEE25D4447800573454 /* UIColor.swift */,
+				4148CAFF25D4483600573454 /* UINavigationController+StatusBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4148CB0D25D456A600573454 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4148CB1125D456B900573454 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4148CB1925D4584E00573454 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA5F25D40D3A00573454 /* Info.plist */,
+				4148CB2525D45A1F00573454 /* Stubs.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4148CB1D25D458DD00573454 /* Credit Report */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA4A25D40D3600573454 /* CreditReportViewController.swift */,
+			);
+			path = "Credit Report";
+			sourceTree = "<group>";
+		};
+		4148CB1E25D458F400573454 /* Credit Report */ = {
+			isa = PBXGroup;
+			children = (
+				4148CA5D25D40D3A00573454 /* CreditReportServiceTests.swift */,
+				4148CB2A25D45B8800573454 /* CreditReportViewModelTests.swift */,
+			);
+			path = "Credit Report";
+			sourceTree = "<group>";
+		};
+		D40DF630E0B230005440ACD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C75436F8D19FE3B8E83F0DE5 /* Pods-CreditScore.debug.xcconfig */,
+				4910520F52583018400850AC /* Pods-CreditScore.release.xcconfig */,
+				671BE4140EE2FA6C1E6DFC98 /* Pods-CreditScore-CreditScoreUITests.debug.xcconfig */,
+				9E359824AC748EC4264B6B83 /* Pods-CreditScore-CreditScoreUITests.release.xcconfig */,
+				CF2DA509A454BA4EBDE53469 /* Pods-CreditScoreTests.debug.xcconfig */,
+				00679C954F3FF90027AF2395 /* Pods-CreditScoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD6B850E9D8A7313A431390C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19F3443C3E3535942FE21CA4 /* Pods_CreditScore.framework */,
+				39F2457BC9329FEFE380AF8C /* Pods_CreditScore_CreditScoreUITests.framework */,
+				7158B05D935999447241CC7C /* Pods_CreditScoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4148CA4225D40D3600573454 /* CreditScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4148CA6D25D40D3A00573454 /* Build configuration list for PBXNativeTarget "CreditScore" */;
+			buildPhases = (
+				0D5D4833B1DCFAA54A054516 /* [CP] Check Pods Manifest.lock */,
+				4148CA3F25D40D3600573454 /* Sources */,
+				4148CA4025D40D3600573454 /* Frameworks */,
+				4148CA4125D40D3600573454 /* Resources */,
+				A0FE73EDD1CDDE66F2B558D7 /* [CP] Embed Pods Frameworks */,
+				4148CAB825D4152C00573454 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditScore;
+			productName = CreditScore;
+			productReference = 4148CA4325D40D3600573454 /* CreditScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4148CA5825D40D3A00573454 /* CreditScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4148CA7025D40D3A00573454 /* Build configuration list for PBXNativeTarget "CreditScoreTests" */;
+			buildPhases = (
+				031454450535E71DDC120696 /* [CP] Check Pods Manifest.lock */,
+				4148CA5525D40D3A00573454 /* Sources */,
+				4148CA5625D40D3A00573454 /* Frameworks */,
+				4148CA5725D40D3A00573454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4148CA5B25D40D3A00573454 /* PBXTargetDependency */,
+			);
+			name = CreditScoreTests;
+			productName = CreditScoreTests;
+			productReference = 4148CA5925D40D3A00573454 /* CreditScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4148CA6325D40D3A00573454 /* CreditScoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4148CA7325D40D3A00573454 /* Build configuration list for PBXNativeTarget "CreditScoreUITests" */;
+			buildPhases = (
+				8F3BA3053377822DC86C28D3 /* [CP] Check Pods Manifest.lock */,
+				4148CA6025D40D3A00573454 /* Sources */,
+				4148CA6125D40D3A00573454 /* Frameworks */,
+				4148CA6225D40D3A00573454 /* Resources */,
+				D9599DF3EC33C5D091E3BC4D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4148CA6625D40D3A00573454 /* PBXTargetDependency */,
+			);
+			name = CreditScoreUITests;
+			productName = CreditScoreUITests;
+			productReference = 4148CA6425D40D3A00573454 /* CreditScoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4148CA3B25D40D3600573454 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4148CA4225D40D3600573454 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4148CA5825D40D3A00573454 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4148CA4225D40D3600573454;
+					};
+					4148CA6325D40D3A00573454 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4148CA4225D40D3600573454;
+					};
+				};
+			};
+			buildConfigurationList = 4148CA3E25D40D3600573454 /* Build configuration list for PBXProject "CreditScore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4148CA3A25D40D3600573454;
+			productRefGroup = 4148CA4425D40D3600573454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4148CA4225D40D3600573454 /* CreditScore */,
+				4148CA5825D40D3A00573454 /* CreditScoreTests */,
+				4148CA6325D40D3A00573454 /* CreditScoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4148CA4125D40D3600573454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4148CAE625D443B800573454 /* Colors.xcassets in Resources */,
+				4148CA5325D40D3A00573454 /* LaunchScreen.storyboard in Resources */,
+				4148CA5025D40D3A00573454 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148CA5725D40D3A00573454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148CA6225D40D3A00573454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031454450535E71DDC120696 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreditScoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D5D4833B1DCFAA54A054516 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreditScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4148CAB825D4152C00573454 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8F3BA3053377822DC86C28D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreditScore-CreditScoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0FE73EDD1CDDE66F2B558D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditScore/Pods-CreditScore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditScore/Pods-CreditScore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreditScore/Pods-CreditScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9599DF3EC33C5D091E3BC4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditScore-CreditScoreUITests/Pods-CreditScore-CreditScoreUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditScore-CreditScoreUITests/Pods-CreditScore-CreditScoreUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreditScore-CreditScoreUITests/Pods-CreditScore-CreditScoreUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4148CA3F25D40D3600573454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4148CB1225D456B900573454 /* NetworkManager.swift in Sources */,
+				4148CB0025D4483600573454 /* UINavigationController+StatusBar.swift in Sources */,
+				4148CAE125D43BE800573454 /* CreditScoreView.swift in Sources */,
+				4148CA4B25D40D3600573454 /* CreditReportViewController.swift in Sources */,
+				4148CABE25D4162D00573454 /* CreditReportViewModel.swift in Sources */,
+				4148CAAC25D4125600573454 /* MainCoordinator.swift in Sources */,
+				4148CA4725D40D3600573454 /* AppDelegate.swift in Sources */,
+				4148CAA425D411C900573454 /* Coordinator.swift in Sources */,
+				4148CAD325D4331900573454 /* CreditReportService.swift in Sources */,
+				4148CACE25D4328A00573454 /* Report.swift in Sources */,
+				4148CAD825D433D900573454 /* Constants.swift in Sources */,
+				4148CAEF25D4447800573454 /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148CA5525D40D3A00573454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4148CA5E25D40D3A00573454 /* CreditReportServiceTests.swift in Sources */,
+				4148CB2625D45A1F00573454 /* Stubs.swift in Sources */,
+				4148CB2B25D45B8800573454 /* CreditReportViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4148CA6025D40D3A00573454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4148CA6925D40D3A00573454 /* CreditScoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4148CA5B25D40D3A00573454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4148CA4225D40D3600573454 /* CreditScore */;
+			targetProxy = 4148CA5A25D40D3A00573454 /* PBXContainerItemProxy */;
+		};
+		4148CA6625D40D3A00573454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4148CA4225D40D3600573454 /* CreditScore */;
+			targetProxy = 4148CA6525D40D3A00573454 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4148CA5125D40D3A00573454 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4148CA5225D40D3A00573454 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4148CA6B25D40D3A00573454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4148CA6C25D40D3A00573454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4148CA6E25D40D3A00573454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75436F8D19FE3B8E83F0DE5 /* Pods-CreditScore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
+				INFOPLIST_FILE = "CreditScore/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.CreditScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4148CA6F25D40D3A00573454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4910520F52583018400850AC /* Pods-CreditScore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
+				INFOPLIST_FILE = "CreditScore/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.CreditScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4148CA7125D40D3A00573454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF2DA509A454BA4EBDE53469 /* Pods-CreditScoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
+				INFOPLIST_FILE = "CreditScoreTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.CreditScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScore.app/CreditScore";
+			};
+			name = Debug;
+		};
+		4148CA7225D40D3A00573454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00679C954F3FF90027AF2395 /* Pods-CreditScoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
+				INFOPLIST_FILE = "CreditScoreTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.CreditScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScore.app/CreditScore";
+			};
+			name = Release;
+		};
+		4148CA7425D40D3A00573454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671BE4140EE2FA6C1E6DFC98 /* Pods-CreditScore-CreditScoreUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
+				INFOPLIST_FILE = CreditScoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.CreditScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditScore;
+			};
+			name = Debug;
+		};
+		4148CA7525D40D3A00573454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E359824AC748EC4264B6B83 /* Pods-CreditScore-CreditScoreUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFG72U4M9F;
+				INFOPLIST_FILE = CreditScoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raulvbrito.CreditScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditScore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4148CA3E25D40D3600573454 /* Build configuration list for PBXProject "CreditScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4148CA6B25D40D3A00573454 /* Debug */,
+				4148CA6C25D40D3A00573454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4148CA6D25D40D3A00573454 /* Build configuration list for PBXNativeTarget "CreditScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4148CA6E25D40D3A00573454 /* Debug */,
+				4148CA6F25D40D3A00573454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4148CA7025D40D3A00573454 /* Build configuration list for PBXNativeTarget "CreditScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4148CA7125D40D3A00573454 /* Debug */,
+				4148CA7225D40D3A00573454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4148CA7325D40D3A00573454 /* Build configuration list for PBXNativeTarget "CreditScoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4148CA7425D40D3A00573454 /* Debug */,
+				4148CA7525D40D3A00573454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4148CA3B25D40D3600573454 /* Project object */;
+}
